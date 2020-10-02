@@ -1,0 +1,147 @@
+/* Checkbox Slider */
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 1rem 0 0 2rem;
+}
+.checkbox + label {
+	position: relative;
+	padding: 0 0 0 6rem;
+	cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 130%;
+  
+}
+.checkbox + label:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 4rem;
+	height: 1.9rem;
+	border-radius: 1.3rem;
+	background: #CDD1DA;
+	box-shadow: inset 0 0.2rem 0.3rem rgba(0,0,0,.2);
+	transition: .2s;
+}
+.checkbox + label:after {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: 0px;
+	width: 2.5rem;
+	height: 2.5rem;
+    border: 1px solid #DEDEDE;
+	border-radius: 2rem;
+	background: #FFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+	transition: .2s;
+}
+.checkbox:checked + label:before {
+	background: #FC7B54;
+}
+.checkbox:checked + label:after {
+	left: 1.6rem;
+}
+
+/* Simple checkbox */
+
+.cbx {
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	font-size: 1.3rem;
+	
+	&>span {
+	  display: inline-block;
+	  vertical-align: middle;
+	  top: -1px;
+	  transform: translate3d(0,0,0);
+
+	  margin-right: 9px;
+	  
+		&:first-child {
+			position: relative;
+			width: 19px;
+			height: 19px;
+			border-radius: 3px;
+			transform: scale(1);
+			vertical-align: middle;
+			border: 1px solid #DEDEDE;
+			box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+			transition: all .2s ease;
+			
+			&>svg {
+				position: absolute;
+				top: 5px;
+				left: 4px;
+				fill: none;
+				stroke: #FC9B54;
+				stroke-width: 3;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke-dasharray: 16px;
+				stroke-dashoffset: 16px;
+				transition: all .3s ease;
+				transition-delay: .1s;
+				transform: translate3d(0,0,0);
+			}
+
+			&:before {
+				content: "";
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				display: block;
+				transform: scale(0);
+				opacity: 1;
+				border-radius: 50%;
+			}
+		}
+	 
+	 
+	}
+	
+	&:hover span:first-child {
+	  	border-color: #cccccc;
+	}
+}
+  
+.inp-cbx:checked + .cbx {
+	&>span {
+		&:first-child {
+			background: #fff;
+			border-color: #DEDEDE;
+			animation: wave .4s ease;
+
+			&>svg {
+			stroke-dashoffset: 0;
+			}  
+
+			&:before {
+			/* transform: scale(3.5); */
+			opacity: 0;
+			transition: all .6s ease;
+			}  
+		}  
+	}      
+}
+
+.custom-checkbox {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+	
+	overflow: hidden;
+	max-height: 6.5rem;
+	transition: max-height .5s;
+	
+
+    &>label {
+        margin-bottom: 1.4rem;
+	}
+	
+	
+}

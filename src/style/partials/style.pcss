@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+
+
+html,
+body {
+    font-size: 10px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color:  #fff;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    color: #333333;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    /* fill: $cl-blue; */
+    text-decoration: none;
+    
+
+    &:hover {
+        
+        text-decoration: none;
+    }
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 6rem;
+    line-height: 7.7rem;
+
+
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+
+
+    @media (--mobile-md) {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+
+    @media (--mobile-sm) {
+        font-size: 3rem;
+        line-height: 3.9rem;
+    }
+}
+
+h3 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+
+   
+}
+
+h4 {
+    font-size: 2.3rem;
+    line-height: 3rem;
+} 
+
+h5 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+ul, ol {
+    /* li {
+        list-style: none outside;
+    } */
+}
+
+li ol{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+
+    padding: 1.6rem 0 1.2rem 0;
+}
+
+ol li {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+ol ol {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+a {
+    /* color: #333333; */
+}
+
+.grey {
+    color: #7C7C7C;
+}
+
+u {
+    display: inline;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    background: #ffe33a;
+    box-shadow: 4px 0 0 #ffe33a, -4px 0 0 #ffe33a, 4px 1px 0 #ffe33a, -4px 1px 0 #ffe33a;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+}
+
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+    
+
+tr:first-child th {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+tr:last-child td {
+    padding: 0 0 1.6rem 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+tr:first-child td {
+    padding: 2rem 0 0 0; 
+}
+
+th, td {
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+ul>li:before {
+    content: '\2014\a0';
+    float: left;
+    margin-left: -35px;
+    margin-left: -3.5rem;
+}
+
+p, td, th, ol, li {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin: 0 0 1.4rem 0;
+}

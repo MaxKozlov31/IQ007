@@ -1,0 +1,76 @@
+.courses {
+
+    padding: 8rem 0;
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        margin-bottom: 6rem;
+        font-weight: bold;
+
+        padding-left: .7rem;
+
+        &_mrg {
+            padding: 0;
+            margin-bottom: 1rem;
+
+        }
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-bottom: 4rem;
+    }
+
+    &-block {
+        width: 50%;
+
+        margin-bottom: 4rem;
+        padding-right: 2rem;
+
+        @media (--mobile-md) {
+            width: 100%;
+        }
+
+        &-title {
+            display: flex;
+
+            margin-bottom: 1rem;
+
+            &__img {
+                width: 5rem;
+                height: 6rem;
+            }
+
+            &__text {
+                font-weight: bold;
+
+                padding-top: 2.7rem;
+                margin-left: 1rem;
+            }
+        }
+
+        &-description {
+            padding-left: 6rem;
+        }
+
+        &-photo {
+            margin: 3.7rem auto 0 auto;
+            max-width: 41rem;
+
+            @media (--mobile-md) {
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}

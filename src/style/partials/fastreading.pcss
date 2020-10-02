@@ -1,0 +1,351 @@
+.banner {
+    
+}
+
+.fastreading {
+    width: 100%;
+    
+    padding: 8rem 0;
+
+    @media (--mobile-sm) {
+        padding: 6rem 0;
+    }
+
+    &-block1 {
+        /* height: 60rem; */
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center center;
+        
+        &_fast-img {
+            background-image: url(../img/main_fastreading_1.jpg);
+        }
+
+        &_eng-img {
+            background-image: url(../img/main_fastreading_1.jpg);
+        }
+
+        &_graf-img {
+            background-image: url(../img/calligraphy.jpg);
+        }
+
+        &_mnemo-img {
+            background-image: url(../img/mnemo.jpg);
+        }
+
+        &-main {
+            width: 52%;
+            margin-bottom: 4rem;
+            
+            @media (--mobile-sm) {
+                width: 100%;
+                max-width: 40rem;
+                margin: 0 auto;
+            }
+
+            &__1 {
+                @media (--mobile-sm) {
+                    display: none;
+                }
+                
+            }
+    
+            &__text {
+
+                &>u {
+                    font-size: 3.6rem;
+                    line-height: 4.6rem;
+
+                    @media (--mobile-sm) {
+                        font-size: 2.7rem;
+                        line-height: 3.8rem;
+                        max-width: 29rem;
+                    }
+                    
+                    &>span {
+                        font-weight: bold;
+        
+                    }
+                }
+                
+    
+                
+            }
+        }
+    
+        &-free {
+            display: flex;
+            flex-direction: column;
+            max-width: 44%;
+
+            @media (--mobile-lg) {
+                max-width: 55%;
+            }
+            
+            @media (--mobile-sm) {
+                display: none;
+            }
+    
+            &__text {
+                font-size: 1.8rem;
+    
+                margin-bottom: 1.5rem;
+    
+                &>span {
+                    font-weight: bold;
+                    
+                }
+    
+                &-under {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+    
+    &-block2 {
+        &-title {
+
+            margin-bottom: 3rem;
+            color: #fff;
+            
+            &__up {
+                font-weight: bold;
+
+                margin-bottom: 1rem;
+
+                @media (--mobile-sm) {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &__down {
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+
+                @media (--mobile-sm) {
+                    font-size: 2rem;
+                    line-height: 2.9rem;
+                }
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: 3rem;
+
+            @media (--mobile-md) {
+                flex-direction: column;
+            }
+
+            &-video {
+                width: 65%;
+                height: 34rem;
+                position: relative;
+                background: url(/img/stock-2.jpg);
+                background-position: center center!important;
+                background-repeat: no-repeat!important;
+                background-size: cover!important;
+                cursor: pointer;
+                
+                &:hover .icon-play{
+                    transform: translate(-50%,-50%) scale(1.2)
+                }
+
+                @media (--mobile-md) {
+                    width: 100%;
+                    height: 37rem;
+                }
+
+                @media (--mobile-sm) {
+                    height: 22rem;
+                }
+            }
+
+            &-photo {
+                background: none;
+                height: auto;
+                cursor: auto;
+                
+                @media (--mobile-md) {
+                    margin-bottom: 3rem;
+                }
+            }
+
+            &-example {
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+
+                @media (--mobile-md) {
+                    order: -1;
+                    width: 100%;
+                }
+                
+
+                &__text {
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                    color: #fff;
+                }
+
+                &__stat {
+                    font-size: 4rem;
+                    line-height: 4.8rem;
+                    color: #ffdd17;
+                    font-weight: bold;
+
+                    @media (--mobile-sm) {
+                        font-size: 3.3rem;
+                        line-height: 4rem;
+                    }
+                }
+
+                &__teacher {
+                    @media (--mobile-md) {
+                        order: 1;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__teacher {
+                margin: 0;
+            }
+        }
+
+        &-text {
+            width: 65%;
+
+            @media (--mobile-md) {
+                width: 100%;
+            }
+            
+            &__description {
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                color: #fff;
+            }
+        }
+    }  
+    
+    &-block3 {
+
+        padding: 8rem 0;
+
+        &-title {
+            margin-bottom: 3rem;
+            font-weight: bold;
+        }
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+
+            @media (--mobile-lg-size) {
+               flex-direction: column; 
+            }
+
+            &-item {
+                width: 47%;
+
+                @media (--mobile-lg-size) {
+                    width: 100%; 
+
+                    margin-bottom: 7rem;
+                 }
+
+                &__title {
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+
+                &__text {
+                    margin-bottom: 3rem;
+                }
+
+                &__img {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.freelesson {
+    color: #000;
+    background: #4db8e7;
+
+    &-content {
+        display: flex;
+
+        padding-top: 8rem;
+
+        @media (--mobile-lg-size) {
+            flex-direction: column;
+        }
+    }
+    &-img {
+        overflow: inherit;
+
+        /* padding-left: 7rem; */
+        padding-right: 2rem;
+    }
+
+    &-block {
+        padding: 2rem 3rem;
+        background: #fff;
+        border-radius: 2rem;
+        height: fit-content;
+        max-width: 47rem;  
+        
+        @media (--mobile-lg-size) {
+            order: -1;
+
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
+
+        @media (--mobile-sm) {
+            padding: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &__subtitle {
+        color: #ccc;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+}
+
+.fox {
+    width: 35rem;
+
+    margin-bottom: -.5rem;
+}
+
+.fox2 {
+    
+
+    margin-bottom: -.5rem;
+    margin-left: -2rem;
+    padding-top: 9rem;
+    padding-right: 1rem;
+
+    @media (--mobile-lg-size) {
+        padding: 0;
+    }
+}
+
+.info-location {
+    display: flex;
+    text-align: center;
+
+    margin-bottom: 2rem;
+}

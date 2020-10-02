@@ -1,0 +1,53 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 320px;
+
+    &-up {
+        margin-bottom: calc($gutter-step * 1.5);
+
+        @media (--tablet) {
+            height: 182px;
+        }
+    }
+    
+
+    &__item {
+        position: relative;
+        margin: 0 10px;
+        height: 320px;
+        width: 480px;
+
+        @media (--tablet) {
+            height: 182px;
+            width: 273px;
+        }
+
+        &--sm {
+            width: 315px;
+
+            @media (--tablet) {
+                width: 179px;
+            }
+        }
+
+        &--video {
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 42px;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.5);  
+                z-index: 1;
+            }
+
+        }
+
+        & img {
+            height: 100%;
+        }
+    }
+}

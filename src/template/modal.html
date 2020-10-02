@@ -1,0 +1,35 @@
+<div class="modal" id="modal-personal-data">
+    <div class="personal-data">
+        <h4 class="section__title font-24">Первое занятие - бесплатно!</h4>
+        <p>Оставьте свой номер телефона, и&nbsp;мы&nbsp;запишем вас на&nbsp;пробное занятие.</p>
+        <input class="search-form" type="text" placeholder="Введите Имя">
+        <input class="search-form phone_mask" type="tel" placeholder="Введите номер телефона">
+        <script>
+            $(".phone_mask").mask("9 (999) 999 - 99 - 99");
+        </script>
+
+        <div class="call">
+            <button class="btn btn_gradient btn-call">Заказать звонок</button>
+
+            <p class="freelesson__subtitle">Телефон нужен для связи с вами: он не будет передан третьим лицам</p>    
+        </div>
+        <button class="modal__close" type="button" data-close="">
+            <svg class="close-icon"> 
+                <use xlink:href="#icon-x"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="modal-close" id="modal-personal-data">
+    <div class="personal-data-close">
+        <h4 class="section__title font-24">Успешно!</h4>
+        <p>В ближайшее время мы с вяжемся с Вами.</p>
+
+        <button class="modal__close" type="button" data-close="">
+            <svg class="close-icon"> 
+                <use xlink:href="#icon-x"></use>
+            </svg>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,138 @@
+@mixin field-style(
+    $bg,
+    $bg-hover,
+    $bg-focus,
+    $bg-active,
+    $bg-disabled,
+
+    $bd,
+    $bd-hover,
+    $bd-focus,
+    $bd-active,
+    $bd-disabled,
+
+    $color,
+    $color-hover,
+    $color-focus,
+    $color-active,
+    $color-disabled
+) {
+    background-color: $bg;
+    color: $color;
+
+    &:hover,
+    &.is-hover {
+        background-color: $bg-hover;
+        border-color: $bd-hover;
+        color: $color-hover;
+    }
+
+    &:focus,
+    &.is-focus {
+        background-color: $bg-focus;
+        border-color: $bd-focus;
+        color: $color-focus;
+    }
+
+    &:active,
+    &.is-active {
+        background-color: $bg-active;
+        border-color: $bd-active;
+        color: $color-active;
+    }
+
+    &.is-disabled,
+    .is-disabled &,
+    &:disabled {
+        background-color: $bg-disabled;
+        border-color: $bd-disabled;
+        color: $color-disabled;
+    }
+}
+
+/* input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+textarea,
+select {
+    border: 1px solid #DEDEDE;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    
+    padding: 1.5rem 2rem;
+    vertical-align: top;
+    outline: none;
+    transition: all $time ease;
+
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+
+    @include field-style(
+        $cl-white,
+        $cl-white,
+        $cl-white,
+        $cl-white,
+        $cl-white,
+
+        $cl-global,
+        $cl-global,
+        $cl-dk-blue,
+        $cl-dk-blue,
+        $cl-grey,
+
+        $cl-global,
+        $cl-global,
+        $cl-global,
+        $cl-global,
+        $cl-dk-grey
+    );
+
+
+} */
+
+
+.field {
+    width: 48%;
+
+    &>label {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    &-name {
+        &>label span {
+            color: red;
+        }
+    }
+
+    &-virtuest {
+        width: 100%;
+
+        margin-bottom: 3.6rem;
+    }
+    
+    &-text {
+        width: 100%;
+
+        margin-bottom: 3.6rem;
+
+        &>textarea {
+            height: 17.5rem;
+        }
+    }
+}
+

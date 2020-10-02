@@ -1,0 +1,134 @@
+/* Intro
+=============== */
+
+
+.intro {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    height: 775px;
+    margin-top: 124px;
+    background: #fff url('../img/main.jpg') center no-repeat;
+    background-size: cover;
+
+    &_items {
+        /* display: none; */
+        width: 100%;
+
+        &_title {
+            font-size: 55px;
+            font-weight: normal;
+            line-height: 110%;
+            color: #000;
+            margin-top: 187px;
+        }
+    
+        &_buttons{
+            display: flex;
+            align-items: center;
+            margin-top: 59px;
+        }
+    }
+
+
+    &_cases {
+        
+        
+
+        &_title {
+            margin-top: 50px;
+            font-size: 55px;
+            line-height: 110%;
+            
+            color: #000;
+
+            margin-bottom: 45px;
+        }
+
+        &_slider {
+            width: 700px;
+            /* display: flex;
+            flex-wrap: nowrap;
+            overflow-x: hidden; */
+
+            &_block {
+                width: 610px;
+                
+                &_section {
+                    position: relative;
+                    width: 610px;
+                    height: 295px;
+
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+
+                    &_first {
+                        background: #fff url('../img/intro_case_1.jpg') center no-repeat;
+
+                    }
+
+                    &_second {
+                        background: #fff url('../img/intro_case_2.jpg') center no-repeat;
+                    }
+
+                    &_item {
+                        position: absolute;
+                        left: 50px;
+                        top: 50px;
+
+        
+                        &_first {
+        
+                        }
+        
+                        &_label {
+                            width: 220px;
+                            font-size: 28px;
+                            font-weight: 700;
+                            color: #fff;
+                        
+                            text-transform: uppercase;
+                            margin-bottom: 30px;
+
+                            &_second {
+                                font-size: 53px;
+                                text-transform: uppercase;
+            
+                            }
+                        }
+        
+                        &_text {
+                            width: 355px;
+                            height: 76px;
+                            font-size: 17px;
+                            line-height: 110%;  
+                            color: #fff;
+                            margin-bottom: 22px;
+                        }
+        
+                        &_link {
+                            font-size: 17px;
+                            line-height: 110%;
+        
+                            text-transform: uppercase;
+                            text-decoration-line: underline;
+                            color: #fff;
+
+                            &_second {
+                                color: #D68F44;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    
+}
+
+
+.display_none {
+    display: none;
+}

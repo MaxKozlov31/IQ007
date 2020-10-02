@@ -1,0 +1,66 @@
+.results {
+    padding: 8rem 0;
+
+    &-title {
+        margin-bottom: 6rem;
+        font-weight: bold;        
+    }
+
+    &-block {
+        margin-bottom: 6rem;
+
+        &-pupil {
+            display: flex;
+            align-items: center;
+
+            margin-bottom: 2rem;
+
+            @media (--mobile-md) {
+                flex-direction: column;
+                align-items: flex-start; 
+            }
+
+            &-photo {
+                border: .1rem solid #d3d3d3;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 5rem;
+                overflow: hidden;
+
+                @media (--mobile-md) {
+                    margin-bottom: 1rem;
+                }
+                
+                &__img {
+
+                }
+            }
+
+            &__name {
+                font-weight: bold;
+
+                padding: 0 2rem;
+
+                @media (--mobile-md) {
+                    padding: 0; 
+                }
+            }
+        }
+
+        &-stat {
+            padding-left: 10rem;
+
+            @media (--mobile-md) {
+                padding: 0;  
+            }
+        }
+    }
+}
+
+.td-p-margin {
+    margin: 0 1.9rem 1.4rem 0;
+}
+
+.th-achive-column {
+    width: 50%;
+}

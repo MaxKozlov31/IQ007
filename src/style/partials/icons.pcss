@@ -1,0 +1,163 @@
+.icon {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    vertical-align: middle;
+
+    &-play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%) scale(1);
+        transition: .2s;
+    }
+
+    
+    &-soc {
+        width: 2rem;
+        height: 1.9rem;
+        fill: #4db8e7;
+        transition: .2s linear;
+    } 
+}
+
+.soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 2px solid #4db8e7;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: .2s linear;
+
+    margin-right: 1.5rem;
+}
+
+.soc-link:hover {
+    background: #fff;
+    border: .3rem solid #a5dcf3;
+}
+
+.soc-link:hover .icon-soc {
+    fill: #ed6e13;
+    transform: scale(1.2);
+}
+
+
+
+
+.region-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+
+
+.arrow-trans {
+    width: 1.4rem;
+    height: 1.2rem;
+    fill: white;
+    margin-left: 1rem;
+}
+
+.close-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    fill: #000;
+    stroke: #000;
+
+    transition: .1s;
+
+    &:hover {
+        fill: #ed6e13;
+        stroke: #ed6e13;
+        transform: scale(1.3);
+    }
+}
+
+.header__icon-telephone {
+    &_tb-lg {
+
+    }
+}
+
+.fa-truck-moving {
+    margin-right: 1rem;
+    &:before {
+        color: #B5B5B5;
+    }
+}
+
+
+.fa-box-open {
+    margin-right: 1rem;
+    &:before {
+        color: #B5B5B5;
+    }   
+}
+
+
+.fa-paperclip:before {
+    content: "\f0c6";
+    color: #4EB7F0;
+
+    margin-left: 1.4rem;
+    margin-right: .5rem;
+}
+
+.fa-file-pdf:before {
+    content: "\f1c1";
+    color: #B5B5B5;
+
+    margin-right: 1rem;
+}
+
+.fa-star.rating__value:before {
+    font-size: 2.6rem;
+}
+
+.fa-thumbs-up:before,
+.fa-thumbs-down:before {
+    color: #B5B5B5;
+    font-size: 2.3rem;
+
+    margin-right: 1.5rem;
+}
+
+
+.rating-ring {
+
+    &__circle {
+
+        transform-origin: center;
+        transform: rotate(-90deg);
+        transition: stroke-dashoffset 1.5s;
+    }
+}
+
+.fa-trash-alt {
+    transition: .2s all;
+    &:hover {
+        color: black;
+    }
+}
+
+.fa-heart {
+    transition: .2s all;
+    &:hover {
+        color: red;
+    }
+}
+
+
+.fa {
+    &-clock, &-comment, &-eye {
+        margin-right: .4rem;
+    }
+}
+

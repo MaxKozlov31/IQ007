@@ -1,0 +1,130 @@
+/* Стилизация полей с датой (datepicker) */
+
+.ui-datepicker {
+    background: #fff;
+    margin: 5px;
+    padding: 0;
+    z-index: 10 !important;
+
+    .ui-datepicker-header {
+
+        background: $cl-white;
+        height: 100%;
+        padding: 0;
+        line-height: $gutter;
+    }
+
+        .ui-datepicker-title {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000;
+            line-height: $gutter;
+        }
+
+        .ui-datepicker-prev,
+        .ui-datepicker-next {
+            border: none;
+            display: block;
+            top: 0;
+            width: $gutter;
+            height: $gutter;
+            text-align: left;
+            cursor: pointer;
+
+            span {
+                position: absolute 50% * * 50%;
+                border: solid transparent;
+                border-color: rgba(#fff, 0);
+                border-width: 6px;
+                display: block;
+                width: 0;
+                height: 0;
+                margin-top: -6px;
+                text-indent: -9999px;
+                pointer-events: none;
+            }
+        }
+
+        .ui-datepicker-prev {
+            left: 0;
+
+            span {
+                border-right-color: #000;
+            }
+        }
+
+        .ui-datepicker-next {
+            right: 0;
+
+            span {
+                border-left-color: #000;
+            }
+        }
+
+    .ui-datepicker-calendar {
+        width: 100%;
+        table-layout: fixed;
+        margin: 0;
+
+        th,
+        td {
+            text-align: center;
+            color: #fff;
+        }
+
+        th {
+            font-size: 12px;
+            text-transform: lowercase;
+            background-color: $cl-date-grey;
+        }
+
+        td {
+            font-size: 14px;
+            padding: 0;
+
+            .ui-state-default {
+                display: inline-block;
+                width: 100%;
+                padding: 0;
+                line-height: $gutter;
+                text-align: center;
+
+                &.ui-state-highlight {
+                    border-color: $cl-red;
+                }
+
+                &.ui-state-active {
+                    border-color: $cl-blue;
+                }
+            }
+
+            a {
+                color: $cl-global;
+
+                &:hover {
+                    background: $cl-blue;
+                    border-color: $cl-blue;
+                    color: #fff;
+                }
+            }
+
+            &.ui-datepicker-week-end {
+                a {
+                    color: $cl-red;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.ui-datepicker-other-month {
+                color: $cl-grey;
+            }
+
+            &.ui-datepicker-unselectable {
+                color: $cl-grey;
+            }
+        }
+    }
+}
